@@ -49,9 +49,9 @@ function App() {
           <Route path='/signup' element={<Signup/>} />
           <Route path='/productinfo/:id' element={<ProductInfo/>} />
           <Route path='/addproduct' element={
-            <ProtectedRouteForAdmin>
+           
               <AddProduct/>
-            </ProtectedRouteForAdmin>
+           
           } />
           <Route path='/updateproduct' element={
             <ProtectedRouteForAdmin>
@@ -102,3 +102,19 @@ const ProtectedRouteForAdmin = ({children})=> {
   }
 
 }
+
+// const express  = require('express');
+// const app = express();
+
+// // const http = require('http');
+// //  const path = require('path');
+// //  app.use(express.static(path.resolve("./")));
+// // app.get('/', (req, res) => {
+// //     return res.sendFile("/index.html");
+// // });
+// app.get('/', (req, res) => {
+//   res.send('Hello World!')
+// })
+// app.listen(5000,() => {
+//   console.log('Server is running on port 5000');
+// });

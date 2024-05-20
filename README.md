@@ -27,6 +27,9 @@ npm install firebase
 
 npm i react-toastify
 
+//npm install socket.io
+
+//npm i express
 
 svg code https://www.svgviewer.dev/
 https://www.svgrepo.com/vectors/lock/
@@ -51,8 +54,23 @@ cd e-commerce
 npm install
 npm run dev
 
+//Start the production server:
+npm run build && npm run start
 
+//create a new repository on the command line
 
+echo "# e-commerce-project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RajuChatterjee/e-commerce-project.git
+git push -u origin main
+
+//push an existing repository from the command line
+git remote add origin https://github.com/RajuChatterjee/e-commerce-project.git
+git branch -M main
+git push -u origin main
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
